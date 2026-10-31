@@ -5,8 +5,9 @@ load_dotenv()
 
 # Initialize Groq Model
 groq_model = ChatGroq(
-    model="openai/gpt-oss-120b",
-    temperature=0
+    model="qwen/qwen3.8-27b",
+    temperature=0,
+    max_tokens=900
 )
 
-print(groq_model.invoke("Rohit Sharma's jersey number ?").content)
+# print(groq_model.invoke("Rohit Sharma's jersey number ?").content)
